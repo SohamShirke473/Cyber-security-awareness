@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Knowledge - Cyber Fraud Awareness India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>CyberSafe India</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html">Types of Fraud</a></li>
+                    <li><a href="stories.html">Real Stories</a></li>
+                    <li><a href="quiz.html" class="active">Test Yourself</a></li>
+                    <li><a href="https://cybercrime.gov.in/">Report Fraud</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Cyber Fraud Awareness Quiz</h1>
+                <p>Test your knowledge to see if you can spot common scams</p>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+            <div class="container">
+                <div class="quiz-container">
+                    <div id="quiz-start" class="quiz-card active">
+                        <h2>Are You Scam-Proof?</h2>
+                        <p>This quick quiz will test your ability to identify potential cyber fraud scenarios. Answer 10 questions to see how prepared you are to protect yourself online.</p>
+                        <button id="start-quiz" class="btn btn-primary">Start Quiz</button>
+                    </div>
+
+                    <div id="quiz-questions" class="quiz-card">
+                        <div class="quiz-progress">
+                            <div class="progress-bar">
+                                <div id="progress-fill"></div>
+                            </div>
+                            <div id="question-counter">Question 1/10</div>
+                        </div>
+                        
+                        <div id="question-container">
+                            <!-- Questions will be loaded here dynamically -->
+                        </div>
+                        
+                        <div class="quiz-options" id="options-container">
+                            <!-- Options will be loaded here dynamically -->
+                        </div>
+                        
+                        <div class="quiz-controls">
+                            <button id="next-btn" class="btn btn-secondary">Next Question</button>
+                        </div>
+                    </div>
+
+                    <div id="quiz-results" class="quiz-card">
+                        <h2>Your Results</h2>
+                        <div class="score-container">
+                            <div class="score-circle">
+                                <span id="score-value">0</span>
+                                <span>/10</span>
+                            </div>
+                            <p id="score-message">Your score assessment appears here</p>
+                        </div>
+                        
+                        <div class="result-details">
+                            <h3>What Your Score Means</h3>
+                            <div id="score-explanation">
+                                <!-- Score explanation will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="retry-quiz" class="btn btn-secondary">Retry Quiz</button>
+                            <a href="resources.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> CyberSafe India</h3>
+                    <p>A citizen initiative to promote cyber fraud awareness across India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="types.html">Types of Fraud</a></li>
+                        <li><a href="stories.html">Real Stories</a></li>
+                        <li><a href="quiz.html">Test Yourself</a></li>
+                        <li><a href="report.html">Report Fraud</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Important Contacts</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Cyber Helpline: 1930</li>
+                        <li><i class="fas fa-globe"></i> <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a></li>
+                        <li><i class="fas fa-envelope"></i> report@cybersafeindia.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSafe India. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

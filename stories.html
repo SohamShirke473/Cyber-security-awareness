@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Life Scam Stories - Cyber Fraud Awareness India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>CyberSafe India</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html">Types of Fraud</a></li>
+                    <li><a href="stories.html" class="active">Real Stories</a></li>
+                    <li><a href="quiz.html">Test Yourself</a></li>
+                    <li><a href="https://cybercrime.gov.in/">Report Fraud</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Real-Life Scam Stories</h1>
+                <p>Learn from others' experiences to protect yourself from similar situations</p>
+            </div>
+        </section>
+
+        <!-- Stories Introduction -->
+        <section class="stories-intro">
+            <div class="container">
+                <p>These stories are based on real incidents reported across India. By sharing these experiences, we hope to create awareness about how scammers operate and the psychological tactics they use to manipulate victims.</p>
+                <div class="search-filter">
+                    <input type="text" id="storySearch" placeholder="Search stories...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section class="stories-section">
+            <div class="container">
+                <div id="storiesContainer" class="stories-grid">
+                    <!-- Stories will be loaded here dynamically from the JSON file -->
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading stories...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Your Story -->
+        <section class="share-story">
+            <div class="container">
+                <h2>Share Your Experience</h2>
+                <p>Has someone tried to scam you? Your story could help protect others. Share it anonymously with us.</p>
+                <a href="#" class="btn btn-primary">Share Your Story</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> CyberSafe India</h3>
+                    <p>A citizen initiative to promote cyber fraud awareness across India.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="types.html">Types of Fraud</a></li>
+                        <li><a href="stories.html">Real Stories</a></li>
+                        <li><a href="quiz.html">Test Yourself</a></li>
+                        <li><a href="report.html">Report Fraud</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Important Contacts</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Cyber Helpline: 1930</li>
+                        <li><i class="fas fa-globe"></i> <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a></li>
+                        <li><i class="fas fa-envelope"></i> report@cybersafeindia.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberSafe India. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
