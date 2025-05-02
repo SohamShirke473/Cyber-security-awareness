@@ -44,12 +44,7 @@
             </div>
         </section>
 
-        <!-- Search Bar -->
-        <section class="search-container">
-            <div class="container">
-                <input type="text" id="fraudSearch" placeholder="Search for a fraud type..." aria-label="Search fraud types">
-            </div>
-        </section>
+        <!-- Search Bar 
 
         <!-- Fraud Types Grid -->
         <section class="fraud-types">
@@ -253,27 +248,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Basic Search Functionality
-        document.getElementById('fraudSearch').addEventListener('input', function(e) {
-            const searchTerm = e.target.value.toLowerCase();
-            const cards = document.querySelectorAll('.fraud-card');
-            cards.forEach(card => {
-                const title = card.querySelector('h3').textContent.toLowerCase();
-                const description = card.querySelector('p').textContent.toLowerCase();
-                if (title.includes(searchTerm) || description.includes(searchTerm)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-
-        // Original main.js functionality (assuming it exists)
-        if (typeof originalMain === 'function') {
-            originalMain();
-        }
-    </script>
+ <script src="main.js"></script>
 </body>
 </html>
