@@ -232,36 +232,72 @@ document.addEventListener('DOMContentLoaded', () => {
         const storiesContainer = document.getElementById('storiesContainer');
 
         // Stories data
-        const stories = [
-            {
-                title: "The OTP Trap: How a Simple Code Led to a ₹50,000 Loss",
-                source: "NDTV - Common Financial Frauds in India",
-                link: "https://www.ndtv.com/india-news/common-financial-frauds-in-india-how-to-stay-safe-5099757",
-                story: "Ravi, a college student in Pune, received a call from someone claiming to be from his bank’s fraud department. The caller warned him about an unauthorized transaction and asked him to share an OTP. In panic, Ravi complied. Moments later, ₹50,000 vanished from his account.\n\nPrecaution: Never share OTPs. Always verify suspicious calls with the bank's official number. Report immediately.",
-                category: "OTP Scam"
-            },
-            {
-                title: "Sextortion Scam: A Flirtatious Chat Turned Nightmare",
-                source: "Reddit – Common Scams in India",
-                link: "https://www.reddit.com/r/india/comments/15shvmp/some_common_scams_happening_in_india_and_how_to/?rdt=39538",
-                story: "Ankit, 19, chatted with a stranger on Instagram. She later convinced him to join a video call and encouraged him to undress—secretly recording him. She demanded ₹10,000, threatening to release the video.\n\nPrecaution: Avoid engaging with strangers in intimate conversations. Report such blackmail to platforms and via the Cybercrime Portal.",
-                category: "Sextortion Scam"
-            },
-            {
-                title: "The Fake Job Offer: When a Dream Opportunity Becomes a Trap",
-                source: "FTC – Job Scams",
-                link: "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages",
-                story: "Priya received an offer letter from a reputed-sounding company. Everything looked legitimate until she was asked to pay ₹2,500 for visa processing. After paying, the company vanished.\n\nPrecaution: Real companies don’t charge upfront. Verify jobs through trusted platforms and official websites before paying or sending personal data.",
-                category: "Job Scam"
-            },
-            {
-                title: "The Investment Scam: When Quick Returns Lead to Big Losses",
-                source: "FTC – Investment Scams",
-                link: "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages",
-                story: "Rahul joined a Telegram group promoting crypto investments. He initially received a small return, then invested more. The group disappeared—with his ₹1 lakh.\n\nPrecaution: Avoid schemes with guaranteed returns. Stick to SEBI-regulated platforms and consult financial advisors before investing.",
-                category: "Investment Scam"
-            }
-        ];
+const stories = [
+    {
+        title: "The OTP Trap: How a Simple Code Led to a ₹50,000 Loss",
+        source: "NDTV - Common Financial Frauds in India",
+        link: "https://www.ndtv.com/india-news/common-financial-frauds-in-india-how-to-stay-safe-5099757",
+        story: "Ravi, a college student in Pune, received a call from someone claiming to be from his bank’s fraud department. The caller warned him about an unauthorized transaction and asked him to share an OTP. In panic, Ravi complied. Moments later, ₹50,000 vanished from his account.\n\nPrecaution: Never share OTPs. Always verify suspicious calls with the bank's official number. Report immediately.",
+        category: "OTP Scam"
+    },
+    {
+        title: "Sextortion Scam: A Flirtatious Chat Turned Nightmare",
+        source: "Reddit – Common Scams in India",
+        link: "https://www.reddit.com/r/india/comments/15shvmp/some_common_scams_happening_in_india_and_how_to/?rdt=39538",
+        story: "Ankit, 19, chatted with a stranger on Instagram. She later convinced him to join a video call and encouraged him to undress-secretly recording him. She demanded ₹10,000, threatening to release the video.\n\nPrecaution: Avoid engaging with strangers in intimate conversations. Report such blackmail to platforms and via the Cybercrime Portal.",
+        category: "Sextortion Scam"
+    },
+    {
+        title: "The Fake Job Offer: When a Dream Opportunity Becomes a Trap",
+        source: "FTC – Job Scams",
+        link: "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages",
+        story: "Priya received an offer letter from a reputed-sounding company. Everything looked legitimate until she was asked to pay ₹2,500 for visa processing. After paying, the company vanished.\n\nPrecaution: Real companies don’t charge upfront. Verify jobs through trusted platforms and official websites before paying or sending personal data.",
+        category: "Job Scam"
+    },
+    {
+        title: "The Investment Scam: When Quick Returns Lead to Big Losses",
+        source: "FTC – Investment Scams",
+        link: "https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages",
+        story: "Rahul joined a Telegram group promoting crypto investments. He initially received a small return, then invested more. The group disappeared-with his ₹1 lakh.\n\nPrecaution: Avoid schemes with guaranteed returns. Stick to SEBI-regulated platforms and consult financial advisors before investing.",
+        category: "Investment Scam"
+    },
+    {
+        title: "The KBC Lottery Scam: The Prize That Never Existed",
+        source: "5paisa – Top Financial Scams in India",
+        link: "https://www.5paisa.com/finschool/financial-scams-why-investors-need-to-be-vigilant/",
+        story: "Sunita received a call claiming she had won ₹25 lakh in the 'KBC Lottery.' She was told to pay ₹15,000 as a processing fee. After transferring the amount, the caller vanished and she never received any prize.\n\nPrecaution: Never pay fees for lottery winnings. Legitimate lotteries do not ask for money upfront. Verify claims directly with official sources.",
+        category: "Lottery Scam"
+    },
+    {
+        title: "The Chit Fund Collapse: Community Savings Wiped Out",
+        source: "5paisa – Top Financial Scams in India",
+        link: "https://www.5paisa.com/finschool/financial-scams-why-investors-need-to-be-vigilant/",
+        story: "A group of neighbors in Kolkata invested in a chit fund promising high returns. Months later, the organizer disappeared with all the pooled money, leaving dozens of families in financial distress.\n\nPrecaution: Invest only in government-registered financial schemes. Avoid informal or unregulated savings groups.",
+        category: "Chit Fund Scam"
+    },
+    {
+        title: "SIM Swap Fraud: When Your Phone Number Gets Hijacked",
+        source: "5paisa – Top Financial Scams in India",
+        link: "https://www.5paisa.com/finschool/financial-scams-why-investors-need-to-be-vigilant/",
+        story: "Vikram suddenly lost network connectivity on his phone. Soon after, he received alerts for unauthorized bank transactions. Scammers had obtained a duplicate SIM and accessed his bank OTPs, draining his account.\n\nPrecaution: If your phone loses signal unexpectedly, contact your telecom provider immediately. Enable additional authentication for banking services.",
+        category: "SIM Swap Scam"
+    },
+    {
+        title: "Phishing Email: The Fake Bank Alert",
+        source: "5paisa – Top Financial Scams in India",
+        link: "https://www.5paisa.com/finschool/financial-scams-why-investors-need-to-be-vigilant/",
+        story: "Aman received an urgent email appearing to be from his bank, asking him to verify his account by clicking a link. He entered his credentials, only to find his account emptied the next day.\n\nPrecaution: Never click on suspicious email links or share banking details online. Always access your bank’s website directly.",
+        category: "Phishing Scam"
+    },
+    {
+        title: "Ponzi Scheme Trap: High Returns, No Principal",
+        source: "5paisa – Top Financial Scams in India",
+        link: "https://www.5paisa.com/finschool/financial-scams-why-investors-need-to-be-vigilant/",
+        story: "Many villagers in Assam invested in a scheme that promised to double their money in a year. Early investors got paid, but when new deposits slowed, the organizer disappeared, leaving hundreds with nothing.\n\nPrecaution: Be wary of investment schemes that promise unusually high or guaranteed returns. Check if the scheme is registered with SEBI or RBI.",
+        category: "Ponzi Scheme"
+    }
+];
+
 
         function loadStories(filter = '') {
             storiesContainer.innerHTML = '';
